@@ -1,0 +1,235 @@
+/* reset css */
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* for navigation bar */
+#navbar{
+    top: 0;
+    position: sticky;
+    display: flex;
+    align-items: center; 
+    background-color: #757761;
+}
+#navlist{
+    display: flex;
+    justify-content: space-between;
+    margin:0.2rem .5rem;
+}
+.navItem{
+    list-style: none;
+    justify-self: end;
+}
+.navItem>a{
+    text-decoration: none;
+    margin: 0.3rem;
+    padding: 1px 2px;
+    color: rgb(15, 14, 14);
+    font-size: 1.7rem;
+}
+.navItem>a:hover{
+    background: rgb(6, 112, 2);
+    color: white;
+    border-radius: 7px;
+    transition:all 0.5s ease-in-out  linear;
+}
+.navItem>a:active{
+    text-decoration: underline;
+}
+#navTitle{
+    margin: 0.2rem 0.7rem;
+    font-size: 2rem;
+    color: rgb(14, 3, 3);
+}
+#searchbar{
+    margin: auto .3rem;
+}
+#searchbar>input{
+    padding: 0%;
+    text-align: center;
+    width: 4rem;
+    border-radius: 6px;
+}
+#searchbar>input:hover{
+    outline: thin;
+    background-color: rgb(4, 133, 21);
+}
+/* benefit section */
+#mid1{
+    background:  url('nuts.jpeg') no-repeat center center/cover;
+    border: solid rgb(182, 47, 6);
+    z-index: -100;
+    overflow: hidden;
+    height: 100%;
+    text-align: center;
+}
+#benefit{
+    color: #901f1f;
+    margin: 1rem auto;
+    font-size: 2rem;
+}
+/* benefit title */
+#mid1>p{
+    margin: auto;
+    padding: 1rem;
+    color:rgb(245, 95, 57);
+}
+/* About us section */
+#whyUs{
+    background:  url('almond.jpeg') no-repeat center center/cover;
+    border: solid rgb(182, 47, 6);
+    z-index: -100;
+    overflow: hidden;
+    height: 100%;
+    text-align: center;
+}
+.WhyUsCards{
+    border: solid black;
+    border-radius: 5px;
+    width: 300px;
+    margin: 4px auto;
+    padding: 4px;
+}
+.WhyUsCards img{
+    border-radius: 5px;
+    width: 300px;
+    width: 56%;
+    height: 60%;
+}
+/* extra section (More) */
+.trnsBttn{
+    border: solid white;
+    background: transparent;
+    margin: 2rem auto;
+}
+.trnsBttn>a{
+    
+    text-decoration: none;
+    color: green;
+    font-size: 3rem;
+}
+.trnsBttn>a:hover{
+    color: white;
+    background-color: green;
+}
+
+#mid2{
+    display: flex;
+    flex-direction: column;
+    background: url('bh1.jpeg') no-repeat center center/cover;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border: solid brown;
+}
+/* blog section */
+#ourBlog{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.blogContent{
+    height: 24vw;
+    width: 25vw;
+    margin: 1rem;
+}
+.blogContent>img{
+    width: 100%;
+    height: 74%;
+}
+.blogContent>p{
+    font-size: 2vw;
+    text-align: center;
+}
+#ourBlog>div{
+    border: solid brown;
+    border-radius: 6px;
+}
+/* customer section */
+#ourBlog>p,#customers>h3{
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+    background-color: #ade8af;
+}
+.customer{
+    height: 20vw;
+    width: 23vw;
+}
+
+/* contact form */
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background-color: #ccccb2;
+}
+form input{
+    width: 90%;
+    border-radius: 8px;
+    padding: 4px;
+    text-align: center;
+    font-size: 29px;
+    display: block;
+    background-color: whitesmoke;
+    margin: 2px auto;
+    border: solid;
+}
+form button{
+    font-size: 21px;
+    border-radius: 3px;
+    padding: 3px;
+    margin: 5px;
+    
+}
+form button:hover{
+    color: ivory;
+    background-color: black;
+}
+
+footer>p{
+    width: 120px;
+    margin: 5px auto;
+}
+.socialmedia{
+    padding: 1rem;
+}
+@media only screen and (max-width:420px){
+    #navlist{
+        flex-direction: column;
+        margin:2rem;    
+    }
+    #searchbar>input {
+        
+        width: 3rem;
+        margin: auto;
+        
+    }
+    .blogContent{
+        height: 51vw;
+        width: 80vw;
+        margin: 0.8rem;
+    }
+    .blogContent>p {
+        font-size: 5vw;
+    }
+    #ourBlog{
+        flex-direction: column;
+    }
+    #ourBlog>div{
+        margin: 2px auto;
+    }
+    form input{
+        font-size: 5vw;
+    }
+}
+@media only screen and (min-width:420px) and (max-width:500px){
+    #searchbar{
+        display: none;
+    }
+}
